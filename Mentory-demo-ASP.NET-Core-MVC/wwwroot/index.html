@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Demo page</title>
+</head>
+<body>
+    <h1>User data form</h1>
+    <form id="user-form">
+        <label for="firstName">First name:</label>
+        <input type="text" name="firstName" value="" />
+        <label for="lastName">Last name:</label>
+        <input type="text" name="lastName" value="" />
+        <input type="submit" value="Submit" />
+    </form>
+    <h1>Response from API:</h1>
+    <div id="output">
+
+    </div>
+    <h1>Getting image from API</h1>
+    <button id="get-image">Get image</button>
+    <div>
+        <img id="image-output" style="object-fit: fill; width: 800px; height: 450px" />
+    </div>
+    <h1>Upload image to API</h1>
+    <form id="image-upload-form">
+        <label for="image">Choose image file</label>
+        <input type="file" name="image" />
+        <input type="submit" value="Upload" />
+    </form>
+    <script src="./js/script.js"></script>
+</body>
+</html>
